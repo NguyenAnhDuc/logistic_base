@@ -58,6 +58,9 @@ services:
     volumes:
       - console-build:/fleetbase/console
     environment:
+      CONSOLE_HOST: "http://192.168.2.22:4200"
+      API_HOST: "http://192.168.2.22:8000"
+      APP_URL: "http://192.168.2.22"
       ENVIRONMENT: development
       DATABASE_URL: "mysql://root@database/fleetbase"
       QUEUE_CONNECTION: redis
