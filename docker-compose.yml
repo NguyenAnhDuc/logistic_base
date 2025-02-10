@@ -58,9 +58,9 @@ services:
     volumes:
       - console-build:/fleetbase/console
     environment:
-      CONSOLE_HOST: "http://ducna.xyz:4200"
-      API_HOST: "http://ducna.xyz:8000"
-      APP_URL: "http://ducna.xyz"
+      CONSOLE_HOST: "http://45.77.251.242:4200"
+      API_HOST: "http://45.77.251.242:8000"
+      APP_URL: "http://45.77.251.242"
       ENVIRONMENT: development
       DATABASE_URL: "mysql://root@database/fleetbase"
       QUEUE_CONNECTION: redis
