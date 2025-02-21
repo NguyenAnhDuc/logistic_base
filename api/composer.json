@@ -10,7 +10,7 @@
     "require": {
         "php": "^8.0",
         "ducna01120/core-api": "^1.5.29",
-        "ducna01120/fleetops-api": "^0.5.22",
+        "ducna01120/fleetops-api": "^0.5.24",
         "fleetbase/registry-bridge": "^0.0.18",
         "fleetbase/storefront-api": "^0.3.25",
         "guzzlehttp/guzzle": "^7.0.1",
