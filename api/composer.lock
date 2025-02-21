@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c4cea80c8889b12efe9a82807f7f63ac",
+    "content-hash": "44fa3f07925f092d6f5b9481451d54f4",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -2158,23 +2158,23 @@
         },
         {
             "name": "ducna01120/fleetops-api",
-            "version": "0.5.24",
+            "version": "0.5.26",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NguyenAnhDuc/fleetops-api.git",
-                "reference": "13f3eebe59abcf521ecba1558d844f0a1f94b05c"
+                "reference": "86f523f907298d0bc2c1b7d9ae8e1b74c4742bd0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NguyenAnhDuc/fleetops-api/zipball/13f3eebe59abcf521ecba1558d844f0a1f94b05c",
-                "reference": "13f3eebe59abcf521ecba1558d844f0a1f94b05c",
+                "url": "https://api.github.com/repos/NguyenAnhDuc/fleetops-api/zipball/86f523f907298d0bc2c1b7d9ae8e1b74c4742bd0",
+                "reference": "86f523f907298d0bc2c1b7d9ae8e1b74c4742bd0",
                 "shasum": ""
             },
             "require": {
                 "barryvdh/laravel-dompdf": "^2.0",
                 "brick/geo": "0.7.2",
                 "cknow/laravel-money": "^7.1",
-                "fleetbase/core-api": "*",
+                "ducna01120/core-api": "*",
                 "geocoder-php/google-maps-places-provider": "^1.4",
                 "giggsey/libphonenumber-for-php": "^8.13",
                 "league/geotools": "^1.1.0",
@@ -2241,9 +2241,9 @@
             ],
             "support": {
                 "issues": "https://github.com/NguyenAnhDuc/fleetops-api/issues",
-                "source": "https://github.com/NguyenAnhDuc/fleetops-api/tree/v0.5.24"
+                "source": "https://github.com/NguyenAnhDuc/fleetops-api/tree/v0.5.26"
             },
-            "time": "2025-02-21T02:24:43+00:00"
+            "time": "2025-02-21T04:42:52+00:00"
         },
         {
             "name": "edamov/pushok",

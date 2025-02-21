@@ -1,6 +1,6 @@
 [submodule "packages/fleetops"]
 	path = packages/fleetops
-	url = git@github.com:fleetbase/fleetops.git
+	url = git@github.com:NguyenAnhDuc/fleetops.git
 [submodule "packages/storefront"]
 	path = packages/storefront
 	url = git@github.com:fleetbase/storefront.git
@@ -9,7 +9,7 @@
 	url = git@github.com:fleetbase/pallet.git
 [submodule "packages/core-api"]
 	path = packages/core-api
-	url = git@github.com:fleetbase/core-api.git
+	url = git@github.com:NguyenAnhDuc/logistic-core-api.git
 	branch = main
 [submodule "packages/ember-core"]
 	path = packages/ember-core
