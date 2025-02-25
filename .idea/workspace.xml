@@ -5,11 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d3a85fe-66eb-4682-83e4-4f126fc630d1" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/api/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/api/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/console/environments/.env.development" beforeDir="false" afterPath="$PROJECT_DIR$/console/environments/.env.development" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/core-api" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core-api" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/core-api/src/Http/Controllers/Internal/v1/SettingController.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core-api/src/Http/Controllers/Internal/v1/SettingController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/fleetops" beforeDir="false" afterPath="$PROJECT_DIR$/packages/fleetops" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/fleetops/addon/components/modals/vehicle-form.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/packages/fleetops/addon/components/modals/vehicle-form.hbs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -58,9 +58,9 @@ services:
     volumes:
       - console-build:/fleetbase/console
     environment:
-      CONSOLE_HOST: "http://45.77.251.242:4200"
-      API_HOST: "http://45.77.251.242:8000"
-      APP_URL: "http://45.77.251.242"
+      CONSOLE_HOST: "http://localhost:4200"
+      API_HOST: "http://localhost:8000"
+      APP_URL: "http://localhost"
       GOOGLE_MAPS_API_KEY: "AIzaSyBSd5EBMlH3h0oA98foYsxpge4ja63CwBw"
       ENVIRONMENT: development
       DATABASE_URL: "mysql://root@database/fleetbase"

@@ -1,15 +1,15 @@
 [submodule "packages/fleetops"]
 	path = packages/fleetops
-	url = git@github.com:fleetbase/fleetops.git
+	url = git@github.com:NguyenAnhDuc/fleetops.git
 [submodule "packages/storefront"]
 	path = packages/storefront
-	url = git@github.com:fleetbase/storefront.git
+	url = git@github.com:NguyenAnhDuc/storefront.git
 [submodule "packages/pallet"]
 	path = packages/pallet
-	url = git@github.com:fleetbase/pallet.git
+	url = git@github.com:NguyenAnhDuc/pallet.git
 [submodule "packages/core-api"]
 	path = packages/core-api
-	url = git@github.com:fleetbase/core-api.git
+	url = git@github.com:NguyenAnhDuc/logistic-core-api.git
 	branch = main
 [submodule "packages/ember-core"]
 	path = packages/ember-core
@@ -31,14 +31,14 @@
 	url = git@github.com:fleetbase/fleetbase-extensions-indexer.git
 [submodule "packages/fleetops-data"]
 	path = packages/fleetops-data
-	url = git@github.com:fleetbase/fleetops-data.git
+	url = git@github.com:NguyenAnhDuc/fleetops-data.git
 	branch = main
 [submodule "docs"]
 	path = docs
 	url = git@github.com:fleetbase/docs.git
 [submodule "packages/registry-bridge"]
 	path = packages/registry-bridge
-	url = git@github.com:fleetbase/registry-bridge.git
+	url = git@github.com:NguyenAnhDuc/registry-bridge.git
 [submodule "packages/ledger"]
 	path = packages/ledger
-	url = git@github.com:fleetbase/ledger.git
+	url = git@github.com:NguyenAnhDuc/ledger.git

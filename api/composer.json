@@ -10,9 +10,9 @@
     "require": {
         "php": "^8.0",
         "ducna01120/core-api": "^1.5.29",
-        "ducna01120/fleetops-api": "^0.5.24",
-        "fleetbase/registry-bridge": "^0.0.18",
-        "fleetbase/storefront-api": "^0.3.25",
+        "ducna01120/fleetops-api": "^0.5.29",
+        "ducna01120/registry-bridge": "^0.0.19",
+        "ducna01120/storefront-api": "^0.3.29",
         "guzzlehttp/guzzle": "^7.0.1",
         "laravel/framework": "^10.0",
         "laravel/octane": "^2.3",
