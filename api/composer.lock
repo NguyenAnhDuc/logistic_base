@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2d38b7639d8240a168322cf8fd307fa6",
+    "content-hash": "fadabed3c65a8cbf0c59aabec95f5809",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -62,16 +62,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.340.0",
+            "version": "3.340.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "435aa3c9867d11df4ba4d5c3d11c7b1696dc3898"
+                "reference": "414b84a625c239b3cbfa132b8d522c579a7eb75c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/435aa3c9867d11df4ba4d5c3d11c7b1696dc3898",
-                "reference": "435aa3c9867d11df4ba4d5c3d11c7b1696dc3898",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/414b84a625c239b3cbfa132b8d522c579a7eb75c",
+                "reference": "414b84a625c239b3cbfa132b8d522c579a7eb75c",
                 "shasum": ""
             },
             "require": {
@@ -153,9 +153,9 @@
             "support": {
                 "forum": "https://github.com/aws/aws-sdk-php/discussions",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.340.0"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.340.1"
             },
-            "time": "2025-02-24T20:28:24+00:00"
+            "time": "2025-02-25T19:14:47+00:00"
         },
         {
             "name": "aws/aws-sdk-php-laravel",
@@ -2158,16 +2158,16 @@
         },
         {
             "name": "ducna01120/fleetops-api",
-            "version": "0.5.29",
+            "version": "0.5.30",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NguyenAnhDuc/fleetops.git",
-                "reference": "07403087d620df763255b8b18a7ad5019a69af63"
+                "reference": "8ef79766cfbd071c222af784c2fffc254f04ed56"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NguyenAnhDuc/fleetops/zipball/07403087d620df763255b8b18a7ad5019a69af63",
-                "reference": "07403087d620df763255b8b18a7ad5019a69af63",
+                "url": "https://api.github.com/repos/NguyenAnhDuc/fleetops/zipball/8ef79766cfbd071c222af784c2fffc254f04ed56",
+                "reference": "8ef79766cfbd071c222af784c2fffc254f04ed56",
                 "shasum": ""
             },
             "require": {
@@ -2241,9 +2241,9 @@
             ],
             "support": {
                 "issues": "https://github.com/NguyenAnhDuc/fleetops/issues",
-                "source": "https://github.com/NguyenAnhDuc/fleetops/tree/v0.5.29"
+                "source": "https://github.com/NguyenAnhDuc/fleetops/tree/v0.5.30"
             },
-            "time": "2025-02-24T04:09:00+00:00"
+            "time": "2025-02-26T08:50:32+00:00"
         },
         {
             "name": "ducna01120/registry-bridge",
@@ -4578,6 +4578,7 @@
                 "issues": "https://github.com/hammerstonedev/fast-paginate/issues",
                 "source": "https://github.com/hammerstonedev/fast-paginate/tree/v1.1.1"
             },
+            "abandoned": "aaronfrancis/fast-paginate",
             "time": "2024-05-16T15:45:29+00:00"
         },
         {
@@ -11292,33 +11293,33 @@
         },
         {
             "name": "spatie/laravel-responsecache",
-            "version": "7.6.3",
+            "version": "7.6.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/laravel-responsecache.git",
-                "reference": "713c56862b2e9145caa659aec19b1077d474064d"
+                "reference": "fbac90e8df40bc6c877302934e3e971c2da409db"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/laravel-responsecache/zipball/713c56862b2e9145caa659aec19b1077d474064d",
-                "reference": "713c56862b2e9145caa659aec19b1077d474064d",
+                "url": "https://api.github.com/repos/spatie/laravel-responsecache/zipball/fbac90e8df40bc6c877302934e3e971c2da409db",
+                "reference": "fbac90e8df40bc6c877302934e3e971c2da409db",
                 "shasum": ""
             },
             "require": {
-                "illuminate/cache": "^10.0|^11.0",
-                "illuminate/console": "^10.0|^11.0",
-                "illuminate/container": "^10.0|^11.0",
-                "illuminate/http": "^10.0|^11.0",
-                "illuminate/support": "^10.0|^11.0",
+                "illuminate/cache": "^10.0|^11.0|^12.0",
+                "illuminate/console": "^10.0|^11.0|^12.0",
+                "illuminate/container": "^10.0|^11.0|^12.0",
+                "illuminate/http": "^10.0|^11.0|^12.0",
+                "illuminate/support": "^10.0|^11.0|^12.0",
                 "nesbot/carbon": "^2.63|^3.0",
                 "php": "^8.2",
                 "spatie/laravel-package-tools": "^1.9"
             },
             "require-dev": {
-                "laravel/framework": "^10.0|^11.0",
+                "laravel/framework": "^10.0|^11.0|^12.0",
                 "mockery/mockery": "^1.4",
-                "orchestra/testbench": "^8.0|^9.0",
-                "pestphp/pest": "^2.22"
+                "orchestra/testbench": "^8.0|^9.0|^10.0",
+                "pestphp/pest": "^2.22|^3.0"
             },
             "type": "library",
             "extra": {
@@ -11359,7 +11360,7 @@
                 "spatie"
             ],
             "support": {
-                "source": "https://github.com/spatie/laravel-responsecache/tree/7.6.3"
+                "source": "https://github.com/spatie/laravel-responsecache/tree/7.6.4"
             },
             "funding": [
                 {
@@ -11371,7 +11372,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-12-11T15:21:42+00:00"
+            "time": "2025-02-25T15:05:05+00:00"
         },
         {
             "name": "spatie/laravel-schedule-monitor",
