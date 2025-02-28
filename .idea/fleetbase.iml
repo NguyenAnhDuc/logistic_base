@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/api/app" isTestSource="false" packagePrefix="App\" />
+      <sourceFolder url="file://$MODULE_DIR$/api/database/factories" isTestSource="false" packagePrefix="Database\Factories\" />
+      <sourceFolder url="file://$MODULE_DIR$/api/database/seeders" isTestSource="false" packagePrefix="Database\Seeders\" />
+      <sourceFolder url="file://$MODULE_DIR$/api/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/api/tests" isTestSource="true" packagePrefix="Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/core-api/seeders" isTestSource="false" packagePrefix="Fleetbase\Seeders\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/core-api/src" isTestSource="false" packagePrefix="Fleetbase\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/core-api/tests" isTestSource="true" packagePrefix="Fleetbase\Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/fleetops/server/seeders" isTestSource="false" packagePrefix="Fleetbase\FleetOps\Seeders\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/fleetops/server/src" isTestSource="false" packagePrefix="Fleetbase\FleetOps\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/fleetops/server/tests" isTestSource="true" packagePrefix="Fleetbase\Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/ledger/server/seeds" isTestSource="false" packagePrefix="Fleetbase\Ledger\Seeds\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/ledger/server/src" isTestSource="false" packagePrefix="Fleetbase\Ledger\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/ledger/server/tests" isTestSource="true" packagePrefix="Fleetbase\Ledger\Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/pallet/server/seeds" isTestSource="false" packagePrefix="Fleetbase\Pallet\Seeds\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/pallet/server/src" isTestSource="false" packagePrefix="Fleetbase\Pallet\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/pallet/server/tests" isTestSource="true" packagePrefix="Fleetbase\Pallet\Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/registry-bridge/server/seeders" isTestSource="false" packagePrefix="Fleetbase\RegistryBridge\Seeders\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/registry-bridge/server/src" isTestSource="false" packagePrefix="Fleetbase\RegistryBridge\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/registry-bridge/server/tests" isTestSource="true" packagePrefix="Fleetbase\RegistryBridge\Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server/seeders" isTestSource="false" packagePrefix="Fleetbase\Storefront\Seeders\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server/src" isTestSource="false" packagePrefix="Fleetbase\Storefront\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server/tests" isTestSource="true" packagePrefix="Fleetbase\Storefront\Tests\" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
