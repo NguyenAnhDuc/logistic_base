@@ -20,8 +20,13 @@ COPY console/package.json console/pnpm-lock.yaml ./
 # Copy over .npmrc if applicable
 COPY console/.npmr[c] ./
 
+RUN mkdir -p ../packages
+
+# Copy over the packages
+COPY packages/fleetops ../packages/fleetops
+
 # Install global dependencies
-RUN npm install -g ember-cli pnpm 
+RUN npm install -g ember-cli pnpm
 
 # Install git
 RUN apk update && apk add git openssh-client
