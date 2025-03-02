@@ -77,11 +77,16 @@ RUN mkdir -p /var/www/.cache/composer && chown -R www-data:www-data /var/www/.ca
 # Optimize Composer Dependency Installation
 COPY --chown=www-data:www-data ./api/composer.json ./api/composer.lock /fleetbase/api/
 
+RUN mkdir -p ../packages
+COPY packages/fleetops ../packages/fleetops
+
 # Pre-install Composer dependencies
 RUN su www-data -s /bin/sh -c "composer install --no-scripts --optimize-autoloader --no-dev --no-cache"
 
 # Setup application
 COPY --chown=www-data:www-data ./api /fleetbase/api
+
+
 
 # Dump autoload
 RUN su www-data -s /bin/sh -c "composer dumpautoload"
