@@ -3,6 +3,15 @@
   <component name="PHPUnit">
     <option name="directories">
       <list>
+        <option value="$PROJECT_DIR$/packages/storefront/server_vendor/jdorn/sql-formatter/tests" />
+        <option value="$PROJECT_DIR$/packages/storefront/server_vendor/xantios/mimey/tests" />
+        <option value="$PROJECT_DIR$/packages/storefront/server_vendor/webit/eval-math/tests" />
+        <option value="$PROJECT_DIR$/packages/storefront/server_vendor/maennchen/zipstream-php/test" />
+        <option value="$PROJECT_DIR$/packages/storefront/server_vendor/pragmarx/countries/tests" />
+        <option value="$PROJECT_DIR$/packages/storefront/server_vendor/phrity/util-errorhandler/tests" />
+        <option value="$PROJECT_DIR$/packages/storefront/server_vendor/rize/uri-template/tests" />
+        <option value="$PROJECT_DIR$/packages/storefront/server_vendor/inkrot/php-compress-json/tests" />
+        <option value="$PROJECT_DIR$/packages/storefront/server_vendor/fleetbase/laravel-mysql-spatial/tests" />
         <option value="$PROJECT_DIR$/api/tests" />
       </list>
     </option>

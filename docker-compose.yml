@@ -57,6 +57,7 @@ services:
         GITHUB_AUTH_KEY: ${GITHUB_AUTH_KEY}
     volumes:
       - console-build:/fleetbase/console
+      - ./packages/fleetops:/fleetbase/packages/fleetops
     environment:
       CONSOLE_HOST: "http://45.77.251.242:4200"
       API_HOST: "http://45.77.251.242:8000"

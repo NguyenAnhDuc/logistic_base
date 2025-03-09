@@ -6,6 +6,7 @@
         <settings>
           <configurations>
             <local_configuration configuration_file_path="$PROJECT_DIR$/packages/storefront/phpunit.xml.dist" executable_path="$PROJECT_DIR$/packages/storefront/server_vendor/pestphp/pest/bin/pest" use_configuration_file="true" />
+            <local_configuration configuration_file_path="$PROJECT_DIR$/packages/storefront/phpunit.xml.dist" executable_path="$PROJECT_DIR$/packages/storefront/server_vendor/pestphp/pest/bin/pest" use_configuration_file="true" />
           </configurations>
         </settings>
       </tool>

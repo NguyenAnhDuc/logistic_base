@@ -5,7 +5,6 @@
       <sourceFolder url="file://$MODULE_DIR$/api/app" isTestSource="false" packagePrefix="App\" />
       <sourceFolder url="file://$MODULE_DIR$/api/database/factories" isTestSource="false" packagePrefix="Database\Factories\" />
       <sourceFolder url="file://$MODULE_DIR$/api/database/seeders" isTestSource="false" packagePrefix="Database\Seeders\" />
-      <sourceFolder url="file://$MODULE_DIR$/api/tests" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/api/tests" isTestSource="true" packagePrefix="Tests\" />
       <sourceFolder url="file://$MODULE_DIR$/packages/core-api/seeders" isTestSource="false" packagePrefix="Fleetbase\Seeders\" />
       <sourceFolder url="file://$MODULE_DIR$/packages/core-api/src" isTestSource="false" packagePrefix="Fleetbase\" />
@@ -25,6 +24,952 @@
       <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server/seeders" isTestSource="false" packagePrefix="Fleetbase\Storefront\Seeders\" />
       <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server/src" isTestSource="false" packagePrefix="Fleetbase\Storefront\" />
       <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server/tests" isTestSource="true" packagePrefix="Fleetbase\Storefront\Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/aws/aws-sdk-php-laravel/src" isTestSource="false" packagePrefix="Aws\Laravel\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/aws/aws-sdk-php-laravel/tests" isTestSource="true" packagePrefix="Aws\Laravel\Test\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/aws/aws-sdk-php/src" isTestSource="false" packagePrefix="Aws\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/aws/aws-sdk-php/tests" isTestSource="true" packagePrefix="Aws\Test\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/barryvdh/laravel-dompdf/src" isTestSource="false" packagePrefix="Barryvdh\DomPDF\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/barryvdh/laravel-dompdf/tests" isTestSource="true" packagePrefix="Barryvdh\DomPDF\Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/beste/clock/src/Clock" isTestSource="false" packagePrefix="Beste\Clock\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/beste/clock/tests/Clock" isTestSource="true" packagePrefix="Beste\Clock\Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/beste/in-memory-cache/src" isTestSource="false" packagePrefix="Beste\Cache\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/beste/in-memory-cache/tests" isTestSource="true" packagePrefix="Beste\Cache\Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/beste/json/tests" isTestSource="true" packagePrefix="Beste\Json\Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/brianium/paratest/src" isTestSource="false" packagePrefix="ParaTest\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/brianium/paratest/test" isTestSource="true" packagePrefix="ParaTest\Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/brick/geo/src" isTestSource="false" packagePrefix="Brick\Geo\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/brick/geo/stubs" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/brick/geo/tests" isTestSource="true" packagePrefix="Brick\Geo\Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/brick/math/src" isTestSource="false" packagePrefix="Brick\Math\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/brick/math/tests" isTestSource="true" packagePrefix="Brick\Math\Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/cache/adapter-common/" isTestSource="false" packagePrefix="Cache\Adapter\Common\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/cache/adapter-common/Tests" isTestSource="true" packagePrefix="Cache\Adapter\Common\Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/cache/array-adapter/" isTestSource="false" packagePrefix="Cache\Adapter\PHPArray\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/cache/hierarchical-cache/" isTestSource="false" packagePrefix="Cache\Hierarchy\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/cache/tag-interop/" isTestSource="false" packagePrefix="Cache\TagInterop\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/carbonphp/carbon-doctrine-types/src/Carbon/Doctrine" isTestSource="false" packagePrefix="Carbon\Doctrine\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/cknow/laravel-money/src" isTestSource="false" packagePrefix="Cknow\Money\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/cknow/laravel-money/tests" isTestSource="true" packagePrefix="Cknow\Money\Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/clue/ndjson-react/src" isTestSource="false" packagePrefix="Clue\React\NDJson\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/clue/ndjson-react/tests" isTestSource="true" packagePrefix="Clue\Tests\React\NDJson\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/clue/stream-filter/src" isTestSource="false" packagePrefix="Clue\StreamFilter\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/clue/stream-filter/tests" isTestSource="true" packagePrefix="Clue\Tests\StreamFilter\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/colinodell/json5/src" isTestSource="false" packagePrefix="ColinODell\Json5\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/colinodell/json5/test" isTestSource="true" packagePrefix="ColinODell\Json5\Test\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/composer/pcre/src" isTestSource="false" packagePrefix="Composer\Pcre\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/composer/pcre/tests" isTestSource="true" packagePrefix="Composer\Pcre\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/composer/semver/src" isTestSource="false" packagePrefix="Composer\Semver\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/composer/semver/tests" isTestSource="true" packagePrefix="Composer\Semver\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/composer/xdebug-handler/src" isTestSource="false" packagePrefix="Composer\XdebugHandler\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/composer/xdebug-handler/tests" isTestSource="true" packagePrefix="Composer\XdebugHandler\Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/dflydev/dot-access-data/src" isTestSource="false" packagePrefix="Dflydev\DotAccessData\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/dflydev/dot-access-data/tests" isTestSource="true" packagePrefix="Dflydev\DotAccessData\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/doctrine/cache/lib/Doctrine/Common/Cache" isTestSource="false" packagePrefix="Doctrine\Common\Cache\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/doctrine/cache/tests/Doctrine/Tests" isTestSource="true" packagePrefix="Doctrine\Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/doctrine/dbal/src" isTestSource="false" packagePrefix="Doctrine\DBAL\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/doctrine/dbal/tests" isTestSource="true" packagePrefix="Doctrine\DBAL\Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/doctrine/deprecations/src" isTestSource="false" packagePrefix="Doctrine\Deprecations\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/doctrine/deprecations/test_fixtures/src" isTestSource="true" packagePrefix="DeprecationTests\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/doctrine/deprecations/test_fixtures/vendor/doctrine/foo" isTestSource="true" packagePrefix="Doctrine\Foo\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/doctrine/event-manager/src" isTestSource="false" packagePrefix="Doctrine\Common\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/doctrine/event-manager/tests" isTestSource="true" packagePrefix="Doctrine\Tests\Common\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/doctrine/inflector/lib/Doctrine/Inflector" isTestSource="false" packagePrefix="Doctrine\Inflector\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/doctrine/inflector/tests/Doctrine/Tests/Inflector" isTestSource="true" packagePrefix="Doctrine\Tests\Inflector\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/doctrine/lexer/src" isTestSource="false" packagePrefix="Doctrine\Common\Lexer\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/doctrine/lexer/tests" isTestSource="true" packagePrefix="Doctrine\Tests\Common\Lexer\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/dompdf/dompdf/src" isTestSource="false" packagePrefix="Dompdf\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/dompdf/dompdf/tests" isTestSource="true" packagePrefix="Dompdf\Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/ducna01120/core-api/seeders" isTestSource="false" packagePrefix="Fleetbase\Seeders\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/ducna01120/core-api/src" isTestSource="false" packagePrefix="Fleetbase\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/ducna01120/core-api/tests" isTestSource="true" packagePrefix="Fleetbase\Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/ducna01120/fleetops-api/server/seeders" isTestSource="false" packagePrefix="Fleetbase\FleetOps\Seeders\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/ducna01120/fleetops-api/server/src" isTestSource="false" packagePrefix="Fleetbase\FleetOps\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/ducna01120/fleetops-api/server/tests" isTestSource="true" packagePrefix="Fleetbase\Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/edamov/pushok/src" isTestSource="false" packagePrefix="Pushok\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/edamov/pushok/tests" isTestSource="true" packagePrefix="edamov\pushok\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/egulias/email-validator/src" isTestSource="false" packagePrefix="Egulias\EmailValidator\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/egulias/email-validator/tests" isTestSource="true" packagePrefix="Egulias\EmailValidator\Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/evenement/evenement/src" isTestSource="false" packagePrefix="Evenement\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/evenement/evenement/tests" isTestSource="true" packagePrefix="Evenement\Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/ezyang/htmlpurifier/library" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/fidry/cpu-core-counter/src" isTestSource="false" packagePrefix="Fidry\CpuCoreCounter\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/fidry/cpu-core-counter/tests" isTestSource="true" packagePrefix="Fidry\CpuCoreCounter\Test\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/fig/http-message-util/src" isTestSource="false" packagePrefix="Fig\Http\Message\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/filp/whoops/src/Whoops" isTestSource="false" packagePrefix="Whoops\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/filp/whoops/tests/Whoops" isTestSource="true" packagePrefix="Whoops\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/firebase/php-jwt/src" isTestSource="false" packagePrefix="Firebase\JWT\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/fleetbase/laravel-mysql-spatial/src" isTestSource="false" packagePrefix="Fleetbase\LaravelMysqlSpatial\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/fleetbase/laravel-mysql-spatial/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/fleetbase/twilio/src" isTestSource="false" packagePrefix="Fleetbase\Twilio\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/fleetbase/twilio/tests" isTestSource="true" packagePrefix="Fleetbase\Twilio\Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/friendsofphp/php-cs-fixer/dev-tools/phpstan/src" isTestSource="true" packagePrefix="PhpCsFixer\PHPStan\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/friendsofphp/php-cs-fixer/src" isTestSource="false" packagePrefix="PhpCsFixer\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/friendsofphp/php-cs-fixer/tests" isTestSource="true" packagePrefix="PhpCsFixer\Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/fruitcake/php-cors/src" isTestSource="false" packagePrefix="Fruitcake\Cors\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/fruitcake/php-cors/tests" isTestSource="true" packagePrefix="Fruitcake\Cors\Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/geo-io/interface/src" isTestSource="false" packagePrefix="GeoIO\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/geo-io/wkb-parser/src" isTestSource="false" packagePrefix="GeoIO\WKB\Parser\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/geocoder-php/chain-provider/" isTestSource="false" packagePrefix="Geocoder\Provider\Chain\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/geocoder-php/common-http/" isTestSource="false" packagePrefix="Geocoder\Http\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/geocoder-php/geo-plugin-provider/" isTestSource="false" packagePrefix="Geocoder\Provider\GeoPlugin\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/geocoder-php/google-maps-places-provider/" isTestSource="false" packagePrefix="Geocoder\Provider\GoogleMapsPlaces\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/geocoder-php/google-maps-provider/" isTestSource="false" packagePrefix="Geocoder\Provider\GoogleMaps\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/giggsey/libphonenumber-for-php/build" isTestSource="true" packagePrefix="libphonenumber\buildtools\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/giggsey/libphonenumber-for-php/src" isTestSource="false" packagePrefix="libphonenumber\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/giggsey/libphonenumber-for-php/tests" isTestSource="true" packagePrefix="libphonenumber\Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/giggsey/locale/build/Build" isTestSource="true" packagePrefix="Giggsey\Locale\Build\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/giggsey/locale/src" isTestSource="false" packagePrefix="Giggsey\Locale\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/giggsey/locale/tests" isTestSource="true" packagePrefix="Giggsey\Locale\Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/google/apiclient-services/src" isTestSource="false" packagePrefix="Google\Service\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/google/apiclient-services/tests/mocks" isTestSource="true" packagePrefix="Google\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/google/apiclient/src" isTestSource="false" packagePrefix="Google\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/google/auth/src" isTestSource="false" packagePrefix="Google\Auth\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/google/auth/tests" isTestSource="true" packagePrefix="Google\Auth\Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/google/cloud-core/src" isTestSource="false" packagePrefix="Google\Cloud\Core\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/google/cloud-core/tests" isTestSource="true" packagePrefix="Google\Cloud\Core\Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/google/cloud-storage/src" isTestSource="false" packagePrefix="Google\Cloud\Storage\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/google/cloud-storage/tests" isTestSource="true" packagePrefix="Google\Cloud\Storage\Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/google/common-protos/metadata/Api" isTestSource="false" packagePrefix="GPBMetadata\Google\Api\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/google/common-protos/metadata/Cloud" isTestSource="false" packagePrefix="GPBMetadata\Google\Cloud\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/google/common-protos/metadata/Iam" isTestSource="false" packagePrefix="GPBMetadata\Google\Iam\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/google/common-protos/metadata/Logging" isTestSource="false" packagePrefix="GPBMetadata\Google\Logging\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/google/common-protos/metadata/Rpc" isTestSource="false" packagePrefix="GPBMetadata\Google\Rpc\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/google/common-protos/metadata/Type" isTestSource="false" packagePrefix="GPBMetadata\Google\Type\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/google/common-protos/src/Api" isTestSource="false" packagePrefix="Google\Api\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/google/common-protos/src/Cloud" isTestSource="false" packagePrefix="Google\Cloud\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/google/common-protos/src/Iam" isTestSource="false" packagePrefix="Google\Iam\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/google/common-protos/src/Rpc" isTestSource="false" packagePrefix="Google\Rpc\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/google/common-protos/src/Type" isTestSource="false" packagePrefix="Google\Type\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/google/gax/dev/src" isTestSource="true" packagePrefix="Google\ApiCore\Dev\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/google/gax/metadata/ApiCore" isTestSource="false" packagePrefix="GPBMetadata\ApiCore\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/google/gax/metadata/Google" isTestSource="true" packagePrefix="GPBMetadata\Google\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/google/gax/src" isTestSource="false" packagePrefix="Google\ApiCore\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/google/gax/tests" isTestSource="true" packagePrefix="Google\ApiCore\Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/google/grpc-gcp/src" isTestSource="false" packagePrefix="Grpc\Gcp\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/google/longrunning/metadata/Longrunning" isTestSource="false" packagePrefix="GPBMetadata\Google\Longrunning\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/google/longrunning/src/ApiCore/LongRunning" isTestSource="false" packagePrefix="Google\ApiCore\LongRunning\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/google/longrunning/src/LongRunning" isTestSource="false" packagePrefix="Google\LongRunning\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/google/protobuf/src/GPBMetadata/Google/Protobuf" isTestSource="false" packagePrefix="GPBMetadata\Google\Protobuf\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/google/protobuf/src/Google/Protobuf" isTestSource="false" packagePrefix="Google\Protobuf\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/grpc/grpc/src/lib" isTestSource="false" packagePrefix="Grpc\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/guzzlehttp/guzzle/src" isTestSource="false" packagePrefix="GuzzleHttp\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/guzzlehttp/guzzle/tests" isTestSource="true" packagePrefix="GuzzleHttp\Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/guzzlehttp/promises/src" isTestSource="false" packagePrefix="GuzzleHttp\Promise\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/guzzlehttp/promises/tests" isTestSource="true" packagePrefix="GuzzleHttp\Promise\Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/guzzlehttp/psr7/src" isTestSource="false" packagePrefix="GuzzleHttp\Psr7\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/guzzlehttp/psr7/tests" isTestSource="true" packagePrefix="GuzzleHttp\Tests\Psr7\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/guzzlehttp/uri-template/src" isTestSource="false" packagePrefix="GuzzleHttp\UriTemplate\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/guzzlehttp/uri-template/tests" isTestSource="true" packagePrefix="GuzzleHttp\UriTemplate\Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/hammerstone/fast-paginate/src" isTestSource="false" packagePrefix="Hammerstone\FastPaginate\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/hammerstone/fast-paginate/tests" isTestSource="true" packagePrefix="Hammerstone\FastPaginate\Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/http-interop/http-factory-guzzle/src" isTestSource="false" packagePrefix="Http\Factory\Guzzle\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/illuminate/auth/" isTestSource="false" packagePrefix="Illuminate\Auth\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/illuminate/broadcasting/" isTestSource="false" packagePrefix="Illuminate\Broadcasting\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/illuminate/bus/" isTestSource="false" packagePrefix="Illuminate\Bus\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/illuminate/cache/" isTestSource="false" packagePrefix="Illuminate\Cache\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/illuminate/collections/" isTestSource="false" packagePrefix="Illuminate\Support\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/illuminate/conditionable/" isTestSource="false" packagePrefix="Illuminate\Support\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/illuminate/config/" isTestSource="false" packagePrefix="Illuminate\Config\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/illuminate/console/" isTestSource="false" packagePrefix="Illuminate\Console\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/illuminate/container/" isTestSource="false" packagePrefix="Illuminate\Container\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/illuminate/contracts/" isTestSource="false" packagePrefix="Illuminate\Contracts\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/illuminate/database/" isTestSource="false" packagePrefix="Illuminate\Database\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/illuminate/events/" isTestSource="false" packagePrefix="Illuminate\Events\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/illuminate/filesystem/" isTestSource="false" packagePrefix="Illuminate\Filesystem\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/illuminate/http/" isTestSource="false" packagePrefix="Illuminate\Http\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/illuminate/macroable/" isTestSource="false" packagePrefix="Illuminate\Support\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/illuminate/mail/" isTestSource="false" packagePrefix="Illuminate\Mail\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/illuminate/notifications/" isTestSource="false" packagePrefix="Illuminate\Notifications\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/illuminate/pipeline/" isTestSource="false" packagePrefix="Illuminate\Pipeline\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/illuminate/queue/" isTestSource="false" packagePrefix="Illuminate\Queue\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/illuminate/routing/" isTestSource="false" packagePrefix="Illuminate\Routing\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/illuminate/session/" isTestSource="false" packagePrefix="Illuminate\Session\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/illuminate/support/" isTestSource="false" packagePrefix="Illuminate\Support\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/illuminate/view/" isTestSource="false" packagePrefix="Illuminate\View\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/inkrot/php-compress-json/src" isTestSource="false" packagePrefix="CompressJson\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/inkrot/php-compress-json/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/inkrot/php-compress-json/tests/CompressJsonTest" isTestSource="true" packagePrefix="CompressJsonTest\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/jdorn/sql-formatter/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/jean85/pretty-package-versions/src" isTestSource="false" packagePrefix="Jean85\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/jean85/pretty-package-versions/tests" isTestSource="true" packagePrefix="Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/jmikola/geojson/src" isTestSource="false" packagePrefix="GeoJson\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/jmikola/geojson/tests" isTestSource="true" packagePrefix="GeoJson\Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/kreait/firebase-php/src/Firebase" isTestSource="false" packagePrefix="Kreait\Firebase\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/kreait/firebase-php/tests" isTestSource="true" packagePrefix="Kreait\Firebase\Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/kreait/firebase-tokens/src/JWT" isTestSource="false" packagePrefix="Kreait\Firebase\JWT\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/kreait/firebase-tokens/tests/JWT" isTestSource="true" packagePrefix="Kreait\Firebase\JWT\Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/kreait/laravel-firebase/src" isTestSource="false" packagePrefix="Kreait\Laravel\Firebase\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/kreait/laravel-firebase/tests" isTestSource="true" packagePrefix="Kreait\Laravel\Firebase\Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/laravel-notification-channels/apn/src" isTestSource="false" packagePrefix="NotificationChannels\Apn\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/laravel-notification-channels/apn/tests" isTestSource="true" packagePrefix="NotificationChannels\Apn\Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/laravel-notification-channels/fcm/src" isTestSource="false" packagePrefix="NotificationChannels\Fcm\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/laravel-notification-channels/fcm/tests" isTestSource="true" packagePrefix="NotificationChannels\Fcm\Test\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/laravel-notification-channels/twilio/src" isTestSource="false" packagePrefix="NotificationChannels\Twilio\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/laravel-notification-channels/twilio/tests" isTestSource="true" packagePrefix="NotificationChannels\Twilio\Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/laravel/prompts/src" isTestSource="false" packagePrefix="Laravel\Prompts\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/laravel/prompts/tests" isTestSource="true" packagePrefix="Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/laravel/sanctum/src" isTestSource="false" packagePrefix="Laravel\Sanctum\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/laravel/sanctum/tests" isTestSource="true" packagePrefix="Laravel\Sanctum\Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/laravel/serializable-closure/src" isTestSource="false" packagePrefix="Laravel\SerializableClosure\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/laravel/serializable-closure/tests" isTestSource="true" packagePrefix="Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/lcobucci/clock/src" isTestSource="false" packagePrefix="Lcobucci\Clock\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/lcobucci/clock/test" isTestSource="true" packagePrefix="Lcobucci\Clock\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/lcobucci/jwt/src" isTestSource="false" packagePrefix="Lcobucci\JWT\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/lcobucci/jwt/tests" isTestSource="true" packagePrefix="Lcobucci\JWT\Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/league/commonmark/src" isTestSource="false" packagePrefix="League\CommonMark\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/league/commonmark/tests/functional" isTestSource="true" packagePrefix="League\CommonMark\Tests\Functional\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/league/commonmark/tests/phpstan" isTestSource="true" packagePrefix="League\CommonMark\Tests\PHPStan\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/league/commonmark/tests/unit" isTestSource="true" packagePrefix="League\CommonMark\Tests\Unit\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/league/config/src" isTestSource="false" packagePrefix="League\Config\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/league/config/tests" isTestSource="true" packagePrefix="League\Config\Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/league/flysystem-google-cloud-storage/" isTestSource="false" packagePrefix="League\Flysystem\GoogleCloudStorage\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/league/flysystem-local/" isTestSource="false" packagePrefix="League\Flysystem\Local\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/league/flysystem/src" isTestSource="false" packagePrefix="League\Flysystem\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/league/geotools/src" isTestSource="false" packagePrefix="League\Geotools\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/league/geotools/tests" isTestSource="true" packagePrefix="League\Geotools\Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/league/mime-type-detection/src" isTestSource="false" packagePrefix="League\MimeTypeDetection\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/lorisleiva/cron-translator/src" isTestSource="false" packagePrefix="Lorisleiva\CronTranslator\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/lorisleiva/cron-translator/tests" isTestSource="true" packagePrefix="Lorisleiva\CronTranslator\Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/maatwebsite/excel/src" isTestSource="false" packagePrefix="Maatwebsite\Excel\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/maatwebsite/excel/tests" isTestSource="true" packagePrefix="Maatwebsite\Excel\Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/maennchen/zipstream-php/src" isTestSource="false" packagePrefix="ZipStream\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/maennchen/zipstream-php/test" isTestSource="true" packagePrefix="ZipStream\Test\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/maennchen/zipstream-php/test" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/markbaker/complex/classes/src" isTestSource="false" packagePrefix="Complex\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/markbaker/matrix/classes/src" isTestSource="false" packagePrefix="Matrix\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/markbaker/matrix/unitTests/classes/src" isTestSource="true" packagePrefix="MatrixTest\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/masterminds/html5/src" isTestSource="false" packagePrefix="Masterminds\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/masterminds/html5/test/HTML5" isTestSource="true" packagePrefix="Masterminds\HTML5\Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/milon/barcode/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/moneyphp/money/benchmark" isTestSource="true" packagePrefix="Benchmark\Money\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/moneyphp/money/src" isTestSource="false" packagePrefix="Money\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/moneyphp/money/tests" isTestSource="true" packagePrefix="Tests\Money\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/monolog/monolog/src/Monolog" isTestSource="false" packagePrefix="Monolog\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/monolog/monolog/tests/Monolog" isTestSource="true" packagePrefix="Monolog\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/mtdowling/jmespath.php/src" isTestSource="false" packagePrefix="JmesPath\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/myclabs/deep-copy/fixtures" isTestSource="true" packagePrefix="DeepCopy\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/myclabs/deep-copy/src/DeepCopy" isTestSource="false" packagePrefix="DeepCopy\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/myclabs/deep-copy/tests/DeepCopyTest" isTestSource="true" packagePrefix="DeepCopyTest\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/nesbot/carbon/src/Carbon" isTestSource="false" packagePrefix="Carbon\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/nesbot/carbon/tests" isTestSource="true" packagePrefix="Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/nikic/php-parser/lib/PhpParser" isTestSource="false" packagePrefix="PhpParser\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/nikic/php-parser/test/PhpParser" isTestSource="true" packagePrefix="PhpParser\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/nunomaduro/collision/src" isTestSource="false" packagePrefix="NunoMaduro\Collision\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/nunomaduro/collision/tests/FakeProgram" isTestSource="true" packagePrefix="Tests\FakeProgram\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/nunomaduro/collision/tests/LaravelApp/app" isTestSource="true" packagePrefix="App\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/nunomaduro/collision/tests/LaravelApp/tests" isTestSource="true" packagePrefix="Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/nunomaduro/collision/tests/Printer" isTestSource="true" packagePrefix="Tests\Printer\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/nunomaduro/collision/tests/Unit" isTestSource="true" packagePrefix="Tests\Unit\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/nunomaduro/termwind/src" isTestSource="false" packagePrefix="Termwind\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/nunomaduro/termwind/tests" isTestSource="true" packagePrefix="Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/nyholm/psr7/src" isTestSource="false" packagePrefix="Nyholm\Psr7\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/nyholm/psr7/tests" isTestSource="true" packagePrefix="Tests\Nyholm\Psr7\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/paragonie/constant_time_encoding/src" isTestSource="false" packagePrefix="ParagonIE\ConstantTime\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/paragonie/constant_time_encoding/tests" isTestSource="true" packagePrefix="ParagonIE\ConstantTime\Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/pestphp/pest-plugin-arch/src" isTestSource="false" packagePrefix="Pest\Arch\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/pestphp/pest-plugin-arch/tests" isTestSource="true" packagePrefix="Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/pestphp/pest-plugin/src" isTestSource="false" packagePrefix="Pest\Plugin\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/pestphp/pest-plugin/tests" isTestSource="true" packagePrefix="Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/pestphp/pest-plugin/tests/Stubs/PestPlugins" isTestSource="true" packagePrefix="Pest\Plugins\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/pestphp/pest/src" isTestSource="false" packagePrefix="Pest\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/pestphp/pest/tests/Fixtures/Arch" isTestSource="true" packagePrefix="Tests\Fixtures\Arch\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/pestphp/pest/tests/Fixtures/Covers" isTestSource="true" packagePrefix="Tests\Fixtures\Covers\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/pestphp/pest/tests/Fixtures/Inheritance" isTestSource="true" packagePrefix="Tests\Fixtures\Inheritance\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/pestphp/pest/tests/PHPUnit" isTestSource="true" packagePrefix="Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/phenx/php-font-lib/src/FontLib" isTestSource="false" packagePrefix="FontLib\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/phenx/php-font-lib/tests/FontLib" isTestSource="true" packagePrefix="FontLib\Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/phenx/php-svg-lib/src/Svg" isTestSource="false" packagePrefix="Svg\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/phenx/php-svg-lib/tests/Svg" isTestSource="true" packagePrefix="Svg\Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/php-http/curl-client/src" isTestSource="false" packagePrefix="Http\Client\Curl\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/php-http/curl-client/tests" isTestSource="true" packagePrefix="Http\Client\Curl\Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/php-http/discovery/spec" isTestSource="true" packagePrefix="spec\Http\Discovery\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/php-http/discovery/src" isTestSource="false" packagePrefix="Http\Discovery\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/php-http/guzzle7-adapter/src" isTestSource="false" packagePrefix="Http\Adapter\Guzzle7\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/php-http/guzzle7-adapter/tests" isTestSource="true" packagePrefix="Http\Adapter\Guzzle7\Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/php-http/httplug/src" isTestSource="false" packagePrefix="Http\Client\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/php-http/message/spec" isTestSource="true" packagePrefix="spec\Http\Message\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/php-http/message/src" isTestSource="false" packagePrefix="Http\Message\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/php-http/promise/src" isTestSource="false" packagePrefix="Http\Promise\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/phpdocumentor/reflection-common/src" isTestSource="false" packagePrefix="phpDocumentor\Reflection\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/phpdocumentor/reflection-docblock/src" isTestSource="false" packagePrefix="phpDocumentor\Reflection\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/phpdocumentor/reflection-docblock/tests/integration" isTestSource="true" packagePrefix="phpDocumentor\Reflection\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/phpdocumentor/reflection-docblock/tests/unit" isTestSource="true" packagePrefix="phpDocumentor\Reflection\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/phpdocumentor/type-resolver/src" isTestSource="false" packagePrefix="phpDocumentor\Reflection\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/phpdocumentor/type-resolver/tests/benchmark" isTestSource="true" packagePrefix="phpDocumentor\Reflection\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/phpdocumentor/type-resolver/tests/unit" isTestSource="true" packagePrefix="phpDocumentor\Reflection\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/phpoffice/phpspreadsheet/infra" isTestSource="true" packagePrefix="PhpOffice\PhpSpreadsheetInfra\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet" isTestSource="false" packagePrefix="PhpOffice\PhpSpreadsheet\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/phpoffice/phpspreadsheet/tests/PhpSpreadsheetTests" isTestSource="true" packagePrefix="PhpOffice\PhpSpreadsheetTests\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/phpseclib/phpseclib/phpseclib" isTestSource="false" packagePrefix="phpseclib3\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/phpseclib/phpseclib/tests" isTestSource="true" packagePrefix="phpseclib3\Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/phpstan/phpdoc-parser/src" isTestSource="false" packagePrefix="PHPStan\PhpDocParser\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/phpstan/phpdoc-parser/tests/PHPStan" isTestSource="true" packagePrefix="PHPStan\PhpDocParser\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/phrity/net-stream/src" isTestSource="false" packagePrefix="Phrity\Net\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/phrity/net-stream/tests" isTestSource="true" packagePrefix="Phrity\Net\Test\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/phrity/net-uri/src" isTestSource="false" packagePrefix="Phrity\Net\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/phrity/util-errorhandler/src" isTestSource="false" packagePrefix="Phrity\Util\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/phrity/util-errorhandler/tests" isTestSource="true" packagePrefix="Phrity\Util\Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/phrity/util-errorhandler/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/phrity/websocket/lib" isTestSource="false" packagePrefix="WebSocket\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/phrity/websocket/tests/mock" isTestSource="true" packagePrefix="WebSocket\Test\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/pragmarx/coollection/src/package" isTestSource="false" packagePrefix="PragmaRX\Coollection\Package\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/pragmarx/coollection/src/package/Support/IlluminateExtracted" isTestSource="false" packagePrefix="IlluminateExtracted\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/pragmarx/coollection/tests" isTestSource="false" packagePrefix="PragmaRX\Coollection\Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/pragmarx/coollection/tests/IlluminateExtracted" isTestSource="false" packagePrefix="IlluminateExtracted\Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/pragmarx/countries/src/package" isTestSource="false" packagePrefix="PragmaRX\Countries\Package\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/pragmarx/countries/src/update" isTestSource="false" packagePrefix="PragmaRX\Countries\Update\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/pragmarx/countries/tests" isTestSource="true" packagePrefix="PragmaRX\Countries\Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/pragmarx/countries/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/pragmarx/countries/tests/PhpUnit" isTestSource="true" packagePrefix="PragmaRX\Countries\Tests\PhpUnit\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/pragmarx/ia-arr/src" isTestSource="false" packagePrefix="IlluminateAgnostic\Arr\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/pragmarx/ia-arr/tests" isTestSource="false" packagePrefix="IlluminateAgnostic\Arr\Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/pragmarx/ia-collection/src" isTestSource="false" packagePrefix="IlluminateAgnostic\Collection\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/pragmarx/ia-collection/tests" isTestSource="false" packagePrefix="IlluminateAgnostic\Collection\Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/pragmarx/ia-str/src" isTestSource="false" packagePrefix="IlluminateAgnostic\Str\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/pragmarx/ia-str/tests" isTestSource="false" packagePrefix="IlluminateAgnostic\Str\Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/psr/cache/src" isTestSource="false" packagePrefix="Psr\Cache\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/psr/clock/src" isTestSource="false" packagePrefix="Psr\Clock\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/psr/container/src" isTestSource="false" packagePrefix="Psr\Container\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/psr/event-dispatcher/src" isTestSource="false" packagePrefix="Psr\EventDispatcher\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/psr/http-client/src" isTestSource="false" packagePrefix="Psr\Http\Client\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/psr/http-factory/src" isTestSource="false" packagePrefix="Psr\Http\Message\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/psr/http-message/src" isTestSource="false" packagePrefix="Psr\Http\Message\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/psr/log/src" isTestSource="false" packagePrefix="Psr\Log\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/psr/simple-cache/src" isTestSource="false" packagePrefix="Psr\SimpleCache\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/ralouphie/getallheaders/tests" isTestSource="true" packagePrefix="getallheaders\Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/ramsey/collection/src" isTestSource="false" packagePrefix="Ramsey\Collection\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/ramsey/collection/tests" isTestSource="true" packagePrefix="Ramsey\Collection\Test\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/ramsey/collection/tests/generics" isTestSource="true" packagePrefix="Ramsey\Test\Generics\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/ramsey/uuid/src" isTestSource="false" packagePrefix="Ramsey\Uuid\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/ramsey/uuid/tests" isTestSource="true" packagePrefix="Ramsey\Uuid\Test\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/ramsey/uuid/tests/benchmark" isTestSource="true" packagePrefix="Ramsey\Uuid\Benchmark\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/ramsey/uuid/tests/static-analysis" isTestSource="true" packagePrefix="Ramsey\Uuid\StaticAnalysis\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/react/cache/src" isTestSource="false" packagePrefix="React\Cache\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/react/cache/tests" isTestSource="true" packagePrefix="React\Tests\Cache\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/react/child-process/src" isTestSource="false" packagePrefix="React\ChildProcess\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/react/child-process/tests" isTestSource="true" packagePrefix="React\Tests\ChildProcess\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/react/dns/src" isTestSource="false" packagePrefix="React\Dns\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/react/dns/tests" isTestSource="true" packagePrefix="React\Tests\Dns\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/react/event-loop/src" isTestSource="false" packagePrefix="React\EventLoop\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/react/event-loop/tests" isTestSource="true" packagePrefix="React\Tests\EventLoop\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/react/promise/src" isTestSource="false" packagePrefix="React\Promise\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/react/promise/tests" isTestSource="true" packagePrefix="React\Promise\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/react/promise/tests/fixtures" isTestSource="true" packagePrefix="React\Promise\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/react/socket/src" isTestSource="false" packagePrefix="React\Socket\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/react/socket/tests" isTestSource="true" packagePrefix="React\Tests\Socket\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/react/stream/src" isTestSource="false" packagePrefix="React\Stream\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/react/stream/tests" isTestSource="true" packagePrefix="React\Tests\Stream\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/rize/uri-template/src/Rize" isTestSource="false" packagePrefix="Rize\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/rize/uri-template/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/sabberworm/php-css-parser/src" isTestSource="false" packagePrefix="Sabberworm\CSS\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/sabberworm/php-css-parser/tests" isTestSource="true" packagePrefix="Sabberworm\CSS\Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/sentry/sentry-laravel/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/sentry/sentry-laravel/test/Sentry" isTestSource="true" packagePrefix="Sentry\Laravel\Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/sentry/sentry/src" isTestSource="false" packagePrefix="Sentry\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/sentry/sentry/tests" isTestSource="true" packagePrefix="Sentry\Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/spatie/laravel-activitylog/src" isTestSource="false" packagePrefix="Spatie\Activitylog\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/spatie/laravel-activitylog/tests" isTestSource="true" packagePrefix="Spatie\Activitylog\Test\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/spatie/laravel-google-cloud-storage/src" isTestSource="false" packagePrefix="Spatie\GoogleCloudStorage\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/spatie/laravel-google-cloud-storage/tests" isTestSource="true" packagePrefix="Spatie\GoogleCloudStorage\Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/spatie/laravel-package-tools/src" isTestSource="false" packagePrefix="Spatie\LaravelPackageTools\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/spatie/laravel-package-tools/tests" isTestSource="true" packagePrefix="Spatie\LaravelPackageTools\Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/spatie/laravel-permission/src" isTestSource="false" packagePrefix="Spatie\Permission\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/spatie/laravel-permission/tests" isTestSource="true" packagePrefix="Spatie\Permission\Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/spatie/laravel-responsecache/src" isTestSource="false" packagePrefix="Spatie\ResponseCache\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/spatie/laravel-responsecache/tests" isTestSource="true" packagePrefix="Spatie\ResponseCache\Test\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/spatie/laravel-schedule-monitor/database/factories" isTestSource="false" packagePrefix="Spatie\ScheduleMonitor\Database\Factories\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/spatie/laravel-schedule-monitor/src" isTestSource="false" packagePrefix="Spatie\ScheduleMonitor\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/spatie/laravel-schedule-monitor/tests" isTestSource="true" packagePrefix="Spatie\ScheduleMonitor\Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/spatie/laravel-sluggable/src" isTestSource="false" packagePrefix="Spatie\Sluggable\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/spatie/laravel-sluggable/tests" isTestSource="true" packagePrefix="Spatie\Sluggable\Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/spomky-labs/pki-framework/src" isTestSource="false" packagePrefix="SpomkyLabs\Pki\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/spomky-labs/pki-framework/tests" isTestSource="true" packagePrefix="SpomkyLabs\Pki\Test\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/sqids/sqids/src" isTestSource="false" packagePrefix="Sqids\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/sqids/sqids/tests" isTestSource="true" packagePrefix="Sqids\Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/stripe/stripe-php/lib" isTestSource="false" packagePrefix="Stripe\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/stripe/stripe-php/tests" isTestSource="true" packagePrefix="Stripe\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/stripe/stripe-php/tests/Stripe" isTestSource="true" packagePrefix="Stripe\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/symfony/cache-contracts/" isTestSource="false" packagePrefix="Symfony\Contracts\Cache\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/symfony/cache/" isTestSource="false" packagePrefix="Symfony\Component\Cache\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/symfony/console/" isTestSource="false" packagePrefix="Symfony\Component\Console\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/symfony/css-selector/" isTestSource="false" packagePrefix="Symfony\Component\CssSelector\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/symfony/error-handler/" isTestSource="false" packagePrefix="Symfony\Component\ErrorHandler\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/symfony/event-dispatcher-contracts/" isTestSource="false" packagePrefix="Symfony\Contracts\EventDispatcher\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/symfony/event-dispatcher/" isTestSource="false" packagePrefix="Symfony\Component\EventDispatcher\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/symfony/filesystem/" isTestSource="false" packagePrefix="Symfony\Component\Filesystem\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/symfony/finder/" isTestSource="false" packagePrefix="Symfony\Component\Finder\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/symfony/http-client-contracts/" isTestSource="false" packagePrefix="Symfony\Contracts\HttpClient\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/symfony/http-client/" isTestSource="false" packagePrefix="Symfony\Component\HttpClient\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/symfony/http-foundation/" isTestSource="false" packagePrefix="Symfony\Component\HttpFoundation\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/symfony/http-kernel/" isTestSource="false" packagePrefix="Symfony\Component\HttpKernel\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/symfony/mailer/" isTestSource="false" packagePrefix="Symfony\Component\Mailer\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/symfony/mime/" isTestSource="false" packagePrefix="Symfony\Component\Mime\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/symfony/options-resolver/" isTestSource="false" packagePrefix="Symfony\Component\OptionsResolver\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/symfony/polyfill-ctype/" isTestSource="false" packagePrefix="Symfony\Polyfill\Ctype\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/symfony/polyfill-intl-grapheme/" isTestSource="false" packagePrefix="Symfony\Polyfill\Intl\Grapheme\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/symfony/polyfill-intl-idn/" isTestSource="false" packagePrefix="Symfony\Polyfill\Intl\Idn\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/symfony/polyfill-intl-normalizer/" isTestSource="false" packagePrefix="Symfony\Polyfill\Intl\Normalizer\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/symfony/polyfill-mbstring/" isTestSource="false" packagePrefix="Symfony\Polyfill\Mbstring\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/symfony/polyfill-php80/" isTestSource="false" packagePrefix="Symfony\Polyfill\Php80\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/symfony/polyfill-php81/" isTestSource="false" packagePrefix="Symfony\Polyfill\Php81\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/symfony/polyfill-php83/" isTestSource="false" packagePrefix="Symfony\Polyfill\Php83\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/symfony/process/" isTestSource="false" packagePrefix="Symfony\Component\Process\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/symfony/property-access/" isTestSource="false" packagePrefix="Symfony\Component\PropertyAccess\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/symfony/property-info/" isTestSource="false" packagePrefix="Symfony\Component\PropertyInfo\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/symfony/psr-http-message-bridge/" isTestSource="false" packagePrefix="Symfony\Bridge\PsrHttpMessage\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/symfony/routing/" isTestSource="false" packagePrefix="Symfony\Component\Routing\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/symfony/serializer/" isTestSource="false" packagePrefix="Symfony\Component\Serializer\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/symfony/service-contracts/" isTestSource="false" packagePrefix="Symfony\Contracts\Service\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/symfony/stopwatch/" isTestSource="false" packagePrefix="Symfony\Component\Stopwatch\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/symfony/string/" isTestSource="false" packagePrefix="Symfony\Component\String\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/symfony/translation-contracts/" isTestSource="false" packagePrefix="Symfony\Contracts\Translation\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/symfony/translation/" isTestSource="false" packagePrefix="Symfony\Component\Translation\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/symfony/type-info/" isTestSource="false" packagePrefix="Symfony\Component\TypeInfo\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/symfony/var-dumper/" isTestSource="false" packagePrefix="Symfony\Component\VarDumper\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/symfony/var-exporter/" isTestSource="false" packagePrefix="Symfony\Component\VarExporter\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/ta-tikoma/phpunit-architecture-test/src" isTestSource="false" packagePrefix="PHPUnit\Architecture\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/tijsverkoyen/css-to-inline-styles/src" isTestSource="false" packagePrefix="TijsVerkoyen\CssToInlineStyles\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/tijsverkoyen/css-to-inline-styles/tests" isTestSource="true" packagePrefix="TijsVerkoyen\CssToInlineStyles\Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/toin0u/geocoder-laravel/src" isTestSource="false" packagePrefix="Geocoder\Laravel\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/toin0u/geocoder-laravel/tests" isTestSource="true" packagePrefix="Geocoder\Laravel\Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/toin0u/geocoder-laravel/vendor/laravel/laravel/app" isTestSource="true" packagePrefix="App\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/twilio/sdk/src/Twilio" isTestSource="false" packagePrefix="Twilio\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/twilio/sdk/tests/Twilio" isTestSource="true" packagePrefix="Twilio\Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/voku/portable-ascii/src/voku" isTestSource="false" packagePrefix="voku\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/voku/portable-ascii/tests" isTestSource="true" packagePrefix="voku\tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/web-token/jwt-library/" isTestSource="false" packagePrefix="Jose\Component\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/webit/eval-math/src" isTestSource="false" packagePrefix="Webit\Util\EvalMath\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/webit/eval-math/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/webmozart/assert/bin/src" isTestSource="true" packagePrefix="Webmozart\Assert\Bin\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/webmozart/assert/src" isTestSource="false" packagePrefix="Webmozart\Assert\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/webmozart/assert/tests" isTestSource="true" packagePrefix="Webmozart\Assert\Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/willdurand/geocoder/" isTestSource="false" packagePrefix="Geocoder\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/xantios/mimey/src" isTestSource="false" packagePrefix="Mimey\" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/xantios/mimey/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/xantios/mimey/tests/src" isTestSource="true" packagePrefix="Mimey\Tests\" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/aws/aws-crt-php" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/aws/aws-sdk-php" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/aws/aws-sdk-php-laravel" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/barryvdh/laravel-dompdf" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/beste/clock" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/beste/in-memory-cache" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/beste/json" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/brick/geo" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/brick/math" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/cache/adapter-common" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/cache/array-adapter" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/cache/hierarchical-cache" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/cache/tag-interop" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/carbonphp/carbon-doctrine-types" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/cknow/laravel-money" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/clue/stream-filter" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/colinodell/json5" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/composer" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/dflydev/dot-access-data" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/doctrine/cache" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/doctrine/dbal" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/doctrine/deprecations" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/doctrine/event-manager" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/doctrine/inflector" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/doctrine/lexer" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/dompdf/dompdf" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/dragonmantank/cron-expression" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/edamov/pushok" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/egulias/email-validator" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/ezyang/htmlpurifier" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/fakerphp/faker" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/fig/http-message-util" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/filp/whoops" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/firebase/php-jwt" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/fleetbase/fleetops-api" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/fleetbase/laravel-mysql-spatial" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/fleetbase/twilio" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/fruitcake/php-cors" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/geo-io/interface" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/geo-io/wkb-parser" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/geocoder-php/chain-provider" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/geocoder-php/common-http" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/geocoder-php/geo-plugin-provider" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/geocoder-php/google-maps-places-provider" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/geocoder-php/google-maps-provider" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/giggsey/libphonenumber-for-php" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/giggsey/locale" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/google/apiclient" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/google/apiclient-services" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/google/auth" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/google/cloud-core" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/google/cloud-storage" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/google/common-protos" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/google/gax" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/google/grpc-gcp" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/google/longrunning" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/google/protobuf" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/graham-campbell/result-type" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/grpc/grpc" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/guzzlehttp/guzzle" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/guzzlehttp/promises" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/guzzlehttp/psr7" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/guzzlehttp/uri-template" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/hamcrest/hamcrest-php" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/hammerstone/fast-paginate" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/http-interop/http-factory-guzzle" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/igorw/get-in" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/inkrot/php-compress-json" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/jdorn/sql-formatter" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/jean85/pretty-package-versions" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/jmikola/geojson" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/kitloong/laravel-migrations-generator" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/kreait/firebase-php" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/kreait/firebase-tokens" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/kreait/laravel-firebase" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/laminas/laminas-diactoros" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/laravel-notification-channels/apn" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/laravel-notification-channels/fcm" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/laravel-notification-channels/twilio" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/laravel/cashier" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/laravel/framework" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/laravel/octane" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/laravel/prompts" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/laravel/sail" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/laravel/sanctum" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/laravel/serializable-closure" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/laravel/tinker" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/lcobucci/clock" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/lcobucci/jwt" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/league/commonmark" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/league/config" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/league/flysystem" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/league/flysystem-aws-s3-v3" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/league/flysystem-google-cloud-storage" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/league/flysystem-local" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/league/geotools" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/league/mime-type-detection" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/lorisleiva/cron-translator" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/maatwebsite/excel" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/maennchen/zipstream-php" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/markbaker/complex" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/markbaker/matrix" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/masterminds/html5" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/milon/barcode" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/mockery/mockery" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/moneyphp/money" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/monolog/monolog" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/mtdowling/jmespath.php" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/myclabs/deep-copy" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/myclabs/php-enum" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/nesbot/carbon" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/nette/caching" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/nette/schema" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/nette/utils" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/nikic/php-parser" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/nunomaduro/collision" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/nunomaduro/termwind" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/nyholm/psr7" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/paragonie/constant_time_encoding" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/paragonie/random_compat" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/paragonie/sodium_compat" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/phar-io/manifest" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/phar-io/version" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/phenx/php-font-lib" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/phenx/php-svg-lib" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/php-http/curl-client" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/php-http/discovery" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/php-http/guzzle7-adapter" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/php-http/httplug" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/php-http/message" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/php-http/promise" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/phpoffice/phpspreadsheet" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/phpoption/phpoption" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/phpseclib/phpseclib" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/phpunit/php-code-coverage" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/phpunit/php-file-iterator" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/phpunit/php-invoker" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/phpunit/php-text-template" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/phpunit/php-timer" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/phpunit/phpunit" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/phrity/net-stream" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/phrity/net-uri" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/phrity/util-errorhandler" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/phrity/websocket" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/pragmarx/coollection" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/pragmarx/countries" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/pragmarx/ia-arr" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/pragmarx/ia-collection" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/pragmarx/ia-str" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/predis/predis" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/psr/cache" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/psr/clock" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/psr/container" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/psr/event-dispatcher" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/psr/http-client" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/psr/http-factory" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/psr/http-message" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/psr/log" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/psr/simple-cache" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/psy/psysh" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/ralouphie/getallheaders" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/ramsey/collection" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/ramsey/uuid" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/react/event-loop" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/react/promise" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/resend/resend-php" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/rize/uri-template" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/s-ichikawa/laravel-sendgrid-driver" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/sabberworm/php-css-parser" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/sebastian/cli-parser" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/sebastian/code-unit" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/sebastian/code-unit-reverse-lookup" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/sebastian/comparator" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/sebastian/complexity" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/sebastian/diff" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/sebastian/environment" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/sebastian/exporter" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/sebastian/global-state" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/sebastian/lines-of-code" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/sebastian/object-enumerator" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/sebastian/object-reflector" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/sebastian/recursion-context" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/sebastian/type" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/sebastian/version" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/sentry/sentry" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/sentry/sentry-laravel" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/spatie/backtrace" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/spatie/error-solutions" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/spatie/flare-client-php" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/spatie/ignition" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/spatie/laravel-activitylog" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/spatie/laravel-google-cloud-storage" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/spatie/laravel-ignition" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/spatie/laravel-package-tools" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/spatie/laravel-permission" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/spatie/laravel-responsecache" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/spatie/laravel-schedule-monitor" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/spatie/laravel-sluggable" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/spomky-labs/pki-framework" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/sqids/sqids" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/stripe/stripe-php" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/symfony/cache" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/symfony/cache-contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/symfony/console" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/symfony/css-selector" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/symfony/deprecation-contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/symfony/error-handler" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/symfony/event-dispatcher" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/symfony/event-dispatcher-contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/symfony/finder" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/symfony/http-client" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/symfony/http-client-contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/symfony/http-foundation" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/symfony/http-kernel" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/symfony/mailer" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/symfony/mailgun-mailer" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/symfony/mime" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/symfony/options-resolver" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/symfony/polyfill-ctype" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/symfony/polyfill-intl-grapheme" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/symfony/polyfill-intl-icu" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/symfony/polyfill-intl-idn" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/symfony/polyfill-intl-normalizer" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/symfony/polyfill-mbstring" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/symfony/polyfill-php80" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/symfony/polyfill-php83" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/symfony/polyfill-uuid" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/symfony/postmark-mailer" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/symfony/process" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/symfony/property-access" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/symfony/property-info" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/symfony/psr-http-message-bridge" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/symfony/routing" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/symfony/serializer" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/symfony/service-contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/symfony/string" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/symfony/translation" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/symfony/translation-contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/symfony/type-info" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/symfony/uid" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/symfony/var-dumper" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/symfony/var-exporter" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/symfony/yaml" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/theseer/tokenizer" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/tijsverkoyen/css-to-inline-styles" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/toin0u/geocoder-laravel" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/twilio/sdk" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/vlucas/phpdotenv" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/voku/portable-ascii" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/web-token/jwt-library" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/webit/eval-math" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/webmozart/assert" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/willdurand/geocoder" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/xantios/mimey" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/aws/aws-crt-php" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/aws/aws-sdk-php" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/aws/aws-sdk-php-laravel" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/barryvdh/laravel-dompdf" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/beste/clock" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/beste/in-memory-cache" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/beste/json" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/brianium/paratest" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/brick/geo" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/brick/math" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/cache/adapter-common" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/cache/array-adapter" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/cache/hierarchical-cache" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/cache/tag-interop" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/carbonphp/carbon-doctrine-types" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/cknow/laravel-money" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/clue/ndjson-react" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/clue/stream-filter" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/colinodell/json5" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/composer" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/dflydev/dot-access-data" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/doctrine/cache" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/doctrine/dbal" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/doctrine/deprecations" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/doctrine/event-manager" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/doctrine/inflector" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/doctrine/lexer" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/dompdf/dompdf" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/ducna01120/core-api" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/ducna01120/fleetops-api" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/edamov/pushok" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/egulias/email-validator" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/evenement/evenement" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/ezyang/htmlpurifier" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/fidry/cpu-core-counter" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/fig/http-message-util" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/filp/whoops" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/firebase/php-jwt" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/fleetbase/laravel-mysql-spatial" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/fleetbase/twilio" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/friendsofphp/php-cs-fixer" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/fruitcake/php-cors" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/geo-io/interface" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/geo-io/wkb-parser" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/geocoder-php/chain-provider" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/geocoder-php/common-http" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/geocoder-php/geo-plugin-provider" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/geocoder-php/google-maps-places-provider" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/geocoder-php/google-maps-provider" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/giggsey/libphonenumber-for-php" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/giggsey/locale" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/google/apiclient" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/google/apiclient-services" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/google/auth" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/google/cloud-core" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/google/cloud-storage" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/google/common-protos" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/google/gax" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/google/grpc-gcp" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/google/longrunning" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/google/protobuf" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/grpc/grpc" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/guzzlehttp/guzzle" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/guzzlehttp/promises" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/guzzlehttp/psr7" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/guzzlehttp/uri-template" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/hammerstone/fast-paginate" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/http-interop/http-factory-guzzle" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/igorw/get-in" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/illuminate/auth" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/illuminate/broadcasting" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/illuminate/bus" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/illuminate/cache" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/illuminate/collections" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/illuminate/conditionable" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/illuminate/config" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/illuminate/console" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/illuminate/container" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/illuminate/contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/illuminate/database" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/illuminate/events" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/illuminate/filesystem" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/illuminate/http" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/illuminate/macroable" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/illuminate/mail" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/illuminate/notifications" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/illuminate/pipeline" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/illuminate/queue" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/illuminate/routing" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/illuminate/session" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/illuminate/support" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/illuminate/view" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/inkrot/php-compress-json" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/jdorn/sql-formatter" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/jean85/pretty-package-versions" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/jmikola/geojson" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/kreait/firebase-php" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/kreait/firebase-tokens" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/kreait/laravel-firebase" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/laravel-notification-channels/apn" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/laravel-notification-channels/fcm" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/laravel-notification-channels/twilio" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/laravel/prompts" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/laravel/sanctum" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/laravel/serializable-closure" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/lcobucci/clock" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/lcobucci/jwt" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/league/commonmark" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/league/config" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/league/flysystem" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/league/flysystem-google-cloud-storage" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/league/flysystem-local" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/league/geotools" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/league/mime-type-detection" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/lorisleiva/cron-translator" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/maatwebsite/excel" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/maennchen/zipstream-php" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/markbaker/complex" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/markbaker/matrix" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/masterminds/html5" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/milon/barcode" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/moneyphp/money" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/monolog/monolog" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/mtdowling/jmespath.php" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/myclabs/deep-copy" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/nesbot/carbon" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/nette/caching" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/nette/schema" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/nette/utils" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/nikic/php-parser" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/nunomaduro/collision" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/nunomaduro/termwind" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/nyholm/psr7" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/paragonie/constant_time_encoding" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/paragonie/random_compat" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/paragonie/sodium_compat" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/pestphp/pest" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/pestphp/pest-plugin" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/pestphp/pest-plugin-arch" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/phar-io/manifest" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/phar-io/version" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/phenx/php-font-lib" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/phenx/php-svg-lib" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/php-http/curl-client" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/php-http/discovery" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/php-http/guzzle7-adapter" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/php-http/httplug" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/php-http/message" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/php-http/promise" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/phpdocumentor/reflection-common" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/phpdocumentor/reflection-docblock" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/phpdocumentor/type-resolver" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/phpoffice/phpspreadsheet" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/phpseclib/phpseclib" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/phpstan/phpdoc-parser" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/phpstan/phpstan" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/phpunit/php-code-coverage" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/phpunit/php-file-iterator" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/phpunit/php-invoker" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/phpunit/php-text-template" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/phpunit/php-timer" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/phpunit/phpunit" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/phrity/net-stream" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/phrity/net-uri" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/phrity/util-errorhandler" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/phrity/websocket" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/pragmarx/coollection" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/pragmarx/countries" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/pragmarx/ia-arr" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/pragmarx/ia-collection" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/pragmarx/ia-str" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/psr/cache" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/psr/clock" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/psr/container" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/psr/event-dispatcher" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/psr/http-client" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/psr/http-factory" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/psr/http-message" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/psr/log" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/psr/simple-cache" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/ralouphie/getallheaders" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/ramsey/collection" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/ramsey/uuid" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/react/cache" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/react/child-process" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/react/dns" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/react/event-loop" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/react/promise" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/react/socket" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/react/stream" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/rize/uri-template" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/sabberworm/php-css-parser" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/sebastian/cli-parser" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/sebastian/code-unit" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/sebastian/code-unit-reverse-lookup" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/sebastian/comparator" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/sebastian/complexity" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/sebastian/diff" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/sebastian/environment" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/sebastian/exporter" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/sebastian/global-state" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/sebastian/lines-of-code" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/sebastian/object-enumerator" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/sebastian/object-reflector" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/sebastian/recursion-context" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/sebastian/type" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/sebastian/version" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/sentry/sentry" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/sentry/sentry-laravel" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/spatie/laravel-activitylog" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/spatie/laravel-google-cloud-storage" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/spatie/laravel-package-tools" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/spatie/laravel-permission" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/spatie/laravel-responsecache" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/spatie/laravel-schedule-monitor" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/spatie/laravel-sluggable" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/spomky-labs/pki-framework" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/sqids/sqids" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/stripe/stripe-php" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/symfony/cache" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/symfony/cache-contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/symfony/console" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/symfony/css-selector" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/symfony/deprecation-contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/symfony/error-handler" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/symfony/event-dispatcher" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/symfony/event-dispatcher-contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/symfony/filesystem" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/symfony/finder" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/symfony/http-client" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/symfony/http-client-contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/symfony/http-foundation" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/symfony/http-kernel" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/symfony/mailer" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/symfony/mime" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/symfony/options-resolver" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/symfony/polyfill-ctype" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/symfony/polyfill-intl-grapheme" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/symfony/polyfill-intl-idn" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/symfony/polyfill-intl-normalizer" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/symfony/polyfill-mbstring" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/symfony/polyfill-php80" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/symfony/polyfill-php81" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/symfony/polyfill-php83" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/symfony/process" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/symfony/property-access" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/symfony/property-info" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/symfony/psr-http-message-bridge" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/symfony/routing" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/symfony/serializer" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/symfony/service-contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/symfony/stopwatch" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/symfony/string" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/symfony/translation" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/symfony/translation-contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/symfony/type-info" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/symfony/var-dumper" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/symfony/var-exporter" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/ta-tikoma/phpunit-architecture-test" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/theseer/tokenizer" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/tijsverkoyen/css-to-inline-styles" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/toin0u/geocoder-laravel" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/twilio/sdk" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/voku/portable-ascii" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/web-token/jwt-library" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/webit/eval-math" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/webmozart/assert" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/willdurand/geocoder" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/storefront/server_vendor/xantios/mimey" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

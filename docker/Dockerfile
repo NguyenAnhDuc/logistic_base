@@ -81,7 +81,7 @@ RUN mkdir -p ../packages
 COPY packages/fleetops ../packages/fleetops
 
 # Pre-install Composer dependencies
-RUN su www-data -s /bin/sh -c "composer install --no-scripts --optimize-autoloader --no-dev --no-cache"
+RUN su www-data -s /bin/sh -c "composer install --no-scripts --optimize-autoloader  --no-cache"
 
 # Setup application
 COPY --chown=www-data:www-data ./api /fleetbase/api
