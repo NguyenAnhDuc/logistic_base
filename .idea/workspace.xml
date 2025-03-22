@@ -5,8 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d3a85fe-66eb-4682-83e4-4f126fc630d1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/docker/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/console/app/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/console/app/router.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs" beforeDir="false" afterPath="$PROJECT_DIR$/docs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/docs/guides/fleet-ops/_category_.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/docs/guides/fleet-ops/_category_.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/fleetops" beforeDir="false" afterPath="$PROJECT_DIR$/packages/fleetops" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/fleetops/addon/engine.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/fleetops/addon/engine.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/fleetops/addon/routes/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/fleetops/addon/routes/home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/fleetops/translations/vi-vn.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/packages/fleetops/translations/vi-vn.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -597,6 +603,9 @@
       <option name="pestRunnerSettings">
         <PestRunner configuration_file="$PROJECT_DIR$/packages/storefront/phpunit.xml.dist" scope="ConfigurationFile" use_alternative_configuration_file="true" />
       </option>
+      <option name="runnerSettings">
+        <PhpTestRunnerSettings configuration_file="$PROJECT_DIR$/packages/storefront/phpunit.xml.dist" scope="ConfigurationFile" use_alternative_configuration_file="true" />
+      </option>
       <method v="2" />
     </configuration>
   </component>
@@ -617,6 +626,8 @@
       <option name="presentableId" value="Default" />
       <updated>1738976259109</updated>
       <workItem from="1738976260202" duration="8762000" />
+      <workItem from="1741507092440" duration="1116000" />
+      <workItem from="1742112304911" duration="14161000" />
     </task>
     <servers />
   </component>
