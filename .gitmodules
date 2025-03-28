@@ -41,3 +41,6 @@
 [submodule "ember-ui"]
 	path = packages/ember-ui
 	url = git@github.com:NguyenAnhDuc/ember-ui.git
+[submodule "packages/ember-ui"]
+	path = packages/ember-ui
+	url = git@github.com:NguyenAnhDuc/ember-ui.git
