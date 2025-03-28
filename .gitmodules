@@ -15,10 +15,6 @@
 	path = packages/ember-core
 	url = git@github.com:fleetbase/ember-core.git
 	branch = main
-[submodule "packages/ember-ui"]
-	path = packages/ember-ui
-	url = https://github.com/new-repo/ember-ui.git
-	branch = main
 [submodule "packages/iam-engine"]
 	path = packages/iam-engine
 	url = git@github.com:fleetbase/iam-engine.git
@@ -42,3 +38,6 @@
 [submodule "packages/ledger"]
 	path = packages/ledger
 	url = git@github.com:NguyenAnhDuc/ledger.git
+[submodule "ember-ui"]
+	path = ember-ui
+	url = git@github.com:NguyenAnhDuc/ember-ui.git
