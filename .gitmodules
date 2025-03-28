@@ -39,5 +39,5 @@
 	path = packages/ledger
 	url = git@github.com:NguyenAnhDuc/ledger.git
 [submodule "ember-ui"]
-	path = ember-ui
+	path = packages/ember-ui
 	url = git@github.com:NguyenAnhDuc/ember-ui.git

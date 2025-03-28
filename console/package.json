@@ -138,7 +138,7 @@
     "pnpm": {
         "overrides": {
             "@fleetbase/ember-core": "latest",
-            "@fleetbase/ember-ui": "latest",
+            
             "@ducna01120/fleetops-data": "latest"
         }
     },

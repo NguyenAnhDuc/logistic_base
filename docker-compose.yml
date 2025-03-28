@@ -58,6 +58,7 @@ services:
     volumes:
       - console-build:/fleetbase/console
       - ./packages/fleetops:/fleetbase/packages/fleetops
+      - ./packages/ember-ui:/fleetbase/packages/ember-ui
     environment:
       # CONSOLE_HOST: "http://45.77.251.242:4200"
       # API_HOST: "http://45.77.251.242:8000"
