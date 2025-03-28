@@ -3,7 +3,7 @@
 FROM dunglas/frankenphp:1.2.3-php8.2-bookworm as base
 
 # Install packages
-RUN apt-get update && apt-get install -y git bind9-utils mycli nodejs npm nano \
+RUN apt-get update && apt-get install -y git bind9-utils mycli nodejs npm nano libgeos-dev \
   && mkdir -p /root/.ssh \
   && ssh-keyscan github.com >> /root/.ssh/known_hosts
 
@@ -20,7 +20,6 @@ RUN install-php-extensions \
   opcache \
   memcached \
   imagick \
-  geos \
   sockets \
   pcntl \
   @composer
