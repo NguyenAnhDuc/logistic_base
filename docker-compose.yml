@@ -60,12 +60,12 @@ services:
       - ./packages/fleetops:/fleetbase/packages/fleetops
       - ./packages/ember-ui:/fleetbase/packages/ember-ui
     environment:
-      # CONSOLE_HOST: "http://45.77.251.242:4200"
-      # API_HOST: "http://45.77.251.242:8000"
-      # APP_URL: "http://45.77.251.242"
-      CONSOLE_HOST: "http://localhost:4200"
-      API_HOST: "http://localhost:8000"
-      APP_URL: "http://localhost"
+      CONSOLE_HOST: "https://web.ducna.xyz"
+      API_HOST: "https://api.ducna.xyz"
+      APP_URL: "https://ducna.xyz"
+      # CONSOLE_HOST: "http://localhost:4200"
+      # API_HOST: "http://localhost:8000"
+      # APP_URL: "http://localhost"
       GOOGLE_MAPS_API_KEY: "AIzaSyBSd5EBMlH3h0oA98foYsxpge4ja63CwBw"
       ENVIRONMENT: development
       DATABASE_URL: "mysql://root@database/fleetbase"
