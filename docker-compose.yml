@@ -60,7 +60,10 @@ services:
     ports:
       - "4200:4200"
     volumes:
-      - console-build:/console
+      - console-build:/
+      # for development
+      - ./console:/app/console
+      - ./packages:/app/packages
 
   application:
     build:
@@ -72,6 +75,9 @@ services:
         GITHUB_AUTH_KEY: ${GITHUB_AUTH_KEY}
     volumes:
       - console-build:/fleetbase/console
+      # for development
+      - ./api:/fleetbase/api
+      - ./packages:/fleetbase/packages
     environment:
       ENVIRONMENT: development
       DATABASE_URL: "mysql://root@database/fleetbase"
