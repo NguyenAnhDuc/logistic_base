@@ -9,9 +9,14 @@
     "license": "AGPL-3.0-or-later",
     "require": {
         "php": "^8.0",
+<<<<<<< HEAD
         "appstract/laravel-opcache": "^4.0",
         "fleetbase/core-api": "^1.6.0",
         "fleetbase/fleetops-api": "^0.6.2",
+=======
+        "ducna01120/core-api": "^1.5.29",
+        "ducna01120/fleetops-api": "^0.5.21",
+>>>>>>> develop
         "fleetbase/registry-bridge": "^0.0.18",
         "fleetbase/storefront-api": "^0.3.29",
         "guzzlehttp/guzzle": "^7.0.1",
@@ -95,7 +100,7 @@
         }
     },
     "config": {
-        "secure-http": false, 
+        "secure-http": false,
         "optimize-autoloader": true,
         "preferred-install": "dist",
         "sort-packages": true,
