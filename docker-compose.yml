@@ -60,10 +60,10 @@ services:
     ports:
       - "4200:4200"
     volumes:
-      - console-build:/
+      - console-build:/console
       # for development
-      # - ./console:/app/console
-      # - ./packages:/app/packages
+      - ./console:/app/console
+      - ./packages:/app/packages
 
   application:
     build:
@@ -76,8 +76,8 @@ services:
     volumes:
       - console-build:/fleetbase/console
       # for development
-      # - ./api:/fleetbase/api
-      # - ./packages:/fleetbase/packages
+      - ./api:/fleetbase/api
+      - ./packages:/fleetbase/packages
     environment:
       CONSOLE_HOST: "http://45.77.251.242:4200"
       API_HOST: "http://45.77.251.242:8000"

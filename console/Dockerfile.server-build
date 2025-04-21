@@ -24,6 +24,8 @@ RUN mkdir -p ../packages
 
 # Copy over the packages
 COPY packages/fleetops ../packages/fleetops
+COPY packages/fleetops-data ../packages/fleetops-data
+COPY packages/ember-ui ../packages/ember-ui
 
 # Install global dependencies
 RUN npm install -g ember-cli pnpm 
