@@ -62,11 +62,6 @@ Router.map(function () {
             });
         });
 
-        this.mount('@fleetbase/fleetops-engine', {
-            as: 'fleet-ops',
-            path: 'fleet-ops'
-        });
-
         this.mount('@fleetbase/dev-engine', {
             as: 'developers',
             path: 'developers'
@@ -85,6 +80,11 @@ Router.map(function () {
         this.mount('@fleetbase/storefront-engine', {
             as: 'storefront',
             path: 'storefront'
+        });
+
+        this.mount('@fleetbase/fleetops-engine', {
+            as: 'fleet-ops',
+            path: 'fleet-ops'
         });
     });
     this.route('catch', { path: '/*' });
