@@ -363,3 +363,5 @@ layout:
         view-profile: View profile
         keyboard-shortcuts: Show keyboard shortcuts
         changelog: Changelog
+        logout: Logout
+        dark-mode: Dark Mode
