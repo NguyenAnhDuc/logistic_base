@@ -76,8 +76,8 @@ services:
     volumes:
       - console-build:/fleetbase/console
       # for development
-      # - ./api:/fleetbase/api
-      # - ./packages:/fleetbase/packages
+      - ./api:/fleetbase/api
+      - ./packages:/fleetbase/packages
     environment:
       ENVIRONMENT: development
       DATABASE_URL: "mysql://root@database/fleetbase"
