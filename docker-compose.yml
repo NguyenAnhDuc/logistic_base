@@ -79,6 +79,7 @@ services:
       - ./api:/fleetbase/api
       - ./packages:/fleetbase/packages
     environment:
+      GOOGLE_MAPS_API_KEY: "AIzaSyBSd5EBMlH3h0oA98foYsxpge4ja63CwBw"
       ENVIRONMENT: development
       DATABASE_URL: "mysql://root@database/fleetbase"
       QUEUE_CONNECTION: redis
@@ -94,8 +95,6 @@ services:
       REGISTRY_HOST: https://registry.fleetbase.io
       REGISTRY_PREINSTALLED_EXTENSIONS: 'true'
       OSRM_HOST: https://router.project-osrm.org
-      GOOGLE_MAPS_API_KEY: "AIzaSyBSd5EBMlH3h0oA98foYsxpge4ja63CwBw"
-
     depends_on:
       - database
       - cache
