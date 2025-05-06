@@ -189,6 +189,7 @@ return [
         'database',
         'public/**/*.php',
         'vendor/fleetbase/core-api/src',
+        'vendor/fleetbase/fleetops-api/server/src',
         'resources/**/*.php',
         'routes',
         'composer.lock',
