@@ -62,8 +62,8 @@ services:
     volumes:
       - console-build:/console
       # for development
-      # - ./console:/app/console
-      # - ./packages:/app/packages
+      - ./console:/app/console
+      - ./packages:/app/packages
 
   application:
     build:
@@ -76,8 +76,8 @@ services:
     volumes:
       - console-build:/fleetbase/console
       # for development
-      # - ./api:/fleetbase/api
-      # - ./packages:/fleetbase/packages
+      - ./api:/fleetbase/api
+      - ./packages:/fleetbase/packages
     environment:
       GOOGLE_MAPS_API_KEY: "AIzaSyBSd5EBMlH3h0oA98foYsxpge4ja63CwBw"
       ENVIRONMENT: development
