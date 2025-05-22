@@ -66,6 +66,8 @@ services:
       - ./packages:/app/packages
 
   application:
+    env_file:
+      - ./api/.env
     build:
       context: .
       dockerfile: docker/Dockerfile
