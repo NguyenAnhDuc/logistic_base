@@ -3,13 +3,13 @@
 	url = git@github.com:NguyenAnhDuc/fleetops.git
 [submodule "packages/storefront"]
 	path = packages/storefront
-	url = git@github.com:fleetbase/storefront.git
+	url = git@github.com:NguyenAnhDuc/storefront.git
 [submodule "packages/pallet"]
 	path = packages/pallet
-	url = git@github.com:fleetbase/pallet.git
+	url = git@github.com:NguyenAnhDuc/pallet.git
 [submodule "packages/core-api"]
 	path = packages/core-api
-	url = git@github.com:fleetbase/core-api.git
+	url = git@github.com:NguyenAnhDuc/core-api.git
 	branch = main
 [submodule "packages/ember-core"]
 	path = packages/ember-core
@@ -21,10 +21,10 @@
 	branch = main
 [submodule "packages/iam-engine"]
 	path = packages/iam-engine
-	url = git@github.com:fleetbase/iam-engine.git
+	url = git@github.com:NguyenAnhDuc/iam-engine.git
 [submodule "packages/dev-engine"]
 	path = packages/dev-engine
-	url = git@github.com:fleetbase/dev-engine.git
+	url = git@github.com:NguyenAnhDuc/dev-engine.git
 	branch = main
 [submodule "packages/fleetbase-extensions-indexer"]
 	path = packages/fleetbase-extensions-indexer
@@ -38,7 +38,7 @@
 	url = git@github.com:fleetbase/docs.git
 [submodule "packages/registry-bridge"]
 	path = packages/registry-bridge
-	url = git@github.com:fleetbase/registry-bridge.git
+	url = git@github.com:NguyenAnhDuc/registry-bridge.git
 [submodule "packages/ledger"]
 	path = packages/ledger
-	url = git@github.com:fleetbase/ledger.git
+	url = git@github.com:NguyenAnhDuc/ledger.git
