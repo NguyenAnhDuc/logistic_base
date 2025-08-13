@@ -34,7 +34,7 @@
         "@fleetbase/ember-ui": "link:../packages/ember-ui",
         "@fleetbase/fleetops-data": "link:../packages/fleetops-data",
         "@fleetbase/fleetops-engine": "link:../packages/fleetops",
-        "@fleetbase/iam-engine": "link:../packages/iam-engine",
+        "@fleetbase/iam-engine": "file:../packages/iam-engine",
         "@fleetbase/leaflet-routing-machine": "^3.2.16",
         "@fleetbase/registry-bridge-engine": "link:../packages/registry-bridge",
         "@fleetbase/storefront-engine": "link:../packages/storefront",
