@@ -48,4 +48,8 @@ return [
         'secret' => env('STRIPE_SECRET', env('STRIPE_API_SECRET')),
         'webhook_secret' => env('STRIPE_WEBHOOK_SECRET'),
     ],
+    'firebase' => [
+        'project_id' => env('FIREBASE_PROJECT_ID'),
+        'credentials' => env('FIREBASE_CREDENTIALS', 'firebase/service-account.json'),
+    ],
 ];
