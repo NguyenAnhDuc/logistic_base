@@ -80,6 +80,8 @@ services:
       # for development
       - ./api:/fleetbase/api
       - ./packages:/fleetbase/packages
+      - ./services/firebase:/fleetbase/api/storage/firebase:ro
+
     environment:
       GOOGLE_MAPS_API_KEY: "AIzaSyBSd5EBMlH3h0oA98foYsxpge4ja63CwBw"
       ENVIRONMENT: development
