@@ -18,6 +18,8 @@ export default class UserModel extends Model {
     @attr('string') email;
     @attr('string') password;
     @attr('string') phone;
+    @attr('string') cccd;
+    @attr('string') address;
     @attr('string') company_name;
     @attr('string') date_of_birth;
     @attr('string') timezone;
@@ -137,6 +139,19 @@ export default class UserModel extends Model {
     }
 
     /** @computed */
+    get formattedPhone() {
+        const phone = this.phone;
+        if (!phone) return '';
+        const digits = phone.replace(/\D/g, '');
+        if (digits.length === 10) {
+            return `${digits.slice(0, 3)} ${digits.slice(3, 6)} ${digits.slice(6)}`;
+        }
+        if (digits.length === 11) {
+            return `${digits.slice(0, 4)} ${digits.slice(4, 7)} ${digits.slice(7)}`;
+        }
+        return phone;
+    }
+
     @not('isEmailVerified') emailIsNotVerified;
     @not('isPhoneVerified') phoneIsNotVerified;
 
@@ -171,7 +186,7 @@ export default class UserModel extends Model {
             return 'Never';
         }
 
-        return format(this.last_login, 'PP p');
+        return format(this.last_login, 'yyyy-MM-dd HH:mm');
     }
 
     @computed('updated_at') get updatedAgo() {
@@ -206,7 +221,7 @@ export default class UserModel extends Model {
         if (!isValid(this.created_at)) {
             return '-';
         }
-        return format(this.created_at, 'PPP p');
+        return format(this.created_at, 'yyyy-MM-dd HH:mm');
     }
 
     @computed('created_at') get createdAtShort() {
