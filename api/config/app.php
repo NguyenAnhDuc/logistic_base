@@ -67,8 +67,8 @@ return [
     |
     */
 
-    'timezone' => 'UTC',
-
+    #'timezone' => 'UTC', 2026-04-21 fix bug trên app hiển thị sai ngày tạo đơn hàng.
+    'timezone' => 'Asia/Ho_Chi_Minh',
     /*
     |--------------------------------------------------------------------------
     | Application Locale Configuration
