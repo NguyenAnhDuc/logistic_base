@@ -77,6 +77,13 @@ export default class AuthLoginController extends Controller {
     @tracked token;
 
     /**
+     * Inline error message to display on the login form.
+     *
+     * @var {String|null}
+     */
+    @tracked errorMessage = null;
+
+    /**
      * Action to login user.
      *
      * @param {Event} event
@@ -101,6 +108,8 @@ export default class AuthLoginController extends Controller {
 
         // start loader
         this.set('isLoading', true);
+        // clear any previous error
+        this.errorMessage = null;
         // set where to redirect on login
         this.setRedirect();
 
@@ -117,6 +126,7 @@ export default class AuthLoginController extends Controller {
                         });
                     })
                     .catch((error) => {
+                        this.errorMessage = this._resolveErrorMessage(error);
                         this.notifications.serverError(error);
                         this.reset('error');
 
@@ -124,6 +134,8 @@ export default class AuthLoginController extends Controller {
                     });
             }
         } catch (error) {
+            this.errorMessage = this._resolveErrorMessage(error);
+            this.reset('error');
             return this.notifications.serverError(error);
         }
 
@@ -131,17 +143,24 @@ export default class AuthLoginController extends Controller {
             await this.session.authenticate('authenticator:fleetbase', { identity, password }, rememberMe);
         } catch (error) {
             this.failedAttempts++;
+            const code = error?.code;
+            const message = error?.message || error?.toString() || '';
 
             // Handle unverified user
-            if (error.toString().includes('not verified')) {
+            if (code === 'not_verified' || message.includes('not verified')) {
+                this.errorMessage = 'Tài khoản của bạn chưa được xác thực. Vui lòng kiểm tra email để xác minh tài khoản.';
+                this.reset('error');
                 return this.sendUserForEmailVerification(identity);
             }
 
             // Handle password reset required
-            if (error.toString().includes('reset required')) {
+            if (code === 'reset_password' || message.includes('reset required')) {
+                this.errorMessage = 'Bạn cần đặt lại mật khẩu để tiếp tục đăng nhập.';
+                this.reset('error');
                 return this.sendUserForPasswordReset(identity);
             }
 
+            this.errorMessage = this._resolveErrorMessage(error);
             return this.failure(error);
         }
 
@@ -231,6 +250,41 @@ export default class AuthLoginController extends Controller {
     failure(error) {
         this.notifications.serverError(error);
         this.reset('error');
+    }
+
+    /**
+     * Resolves a user-friendly error message from an API error object.
+     * Maps known error codes and message patterns to localized strings.
+     *
+     * @param {Error} error
+     * @return {String}
+     */
+    _resolveErrorMessage(error) {
+        const code = error?.code;
+        const message = error?.message || error?.toString() || '';
+
+        // Map by error code first (most reliable)
+        const codeMessages = {
+            no_user: 'Không tìm thấy tài khoản với email hoặc số điện thoại này.',
+            invalid_password: 'Mật khẩu không chính xác. Vui lòng thử lại.',
+            not_verified: 'Tài khoản của bạn chưa được xác thực. Vui lòng kiểm tra email.',
+            reset_password: 'Bạn cần đặt lại mật khẩu để tiếp tục đăng nhập.',
+        };
+
+        if (code && codeMessages[code]) {
+            return codeMessages[code];
+        }
+
+        // Fallback: map by known message substrings
+        if (message.includes('not verified')) return 'Tài khoản của bạn chưa được xác thực. Vui lòng kiểm tra email.';
+        if (message.includes('reset required')) return 'Bạn cần đặt lại mật khẩu để tiếp tục đăng nhập.';
+        if (message.includes('No user found')) return 'Không tìm thấy tài khoản với thông tin đã nhập.';
+        if (message.includes('Authentication failed')) return 'Mật khẩu không chính xác. Vui lòng thử lại.';
+        if (message.includes('Session has expired')) return 'Phiên đăng nhập đã hết hạn. Vui lòng thử lại.';
+        if (message.includes('not authorized')) return 'Bạn không có quyền truy cập vào hệ thống này.';
+
+        // Last resort: return the raw message or a generic fallback
+        return message || 'Đăng nhập thất bại. Vui lòng thử lại.';
     }
 
     /**
