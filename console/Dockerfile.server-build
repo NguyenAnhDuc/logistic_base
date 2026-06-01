@@ -42,6 +42,9 @@ RUN apk update && apk add git openssh-client
 # Trust GitHub's RSA host key
 RUN mkdir -p -m 0600 ~/.ssh && ssh-keyscan github.com >> ~/.ssh/known_hosts
 
+# Allow build scripts for known safe packages (pnpm v10 requires explicit approval)
+RUN printf 'onlyBuiltDependencies:\n  - "@fortawesome/fontawesome-common-types"\n  - "@fortawesome/fontawesome-svg-core"\n  - "@fortawesome/free-brands-svg-icons"\n  - "@fortawesome/free-solid-svg-icons"\n  - "core-js"\n' > pnpm.yaml
+
 # Install app dependencies
 RUN pnpm install
 
