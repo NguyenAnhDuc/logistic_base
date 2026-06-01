@@ -17,6 +17,9 @@ ENV PATH /root/.pnpm/bin:$PATH
 # Copy pnpm-lock.yaml (or package.json) into the directory /console in the container
 COPY console/package.json console/pnpm-lock.yaml ./
 
+# Copy pnpm workspace config (required for pnpm v10 build script approvals)
+COPY console/pnpm-workspace.yaml ./
+
 # Copy over .npmrc if applicable
 COPY console/.npmr[c] ./
 
@@ -34,16 +37,13 @@ COPY packages/registry-bridge ../packages/registry-bridge
 COPY packages/storefront ../packages/storefront
 
 # Install global dependencies
-RUN npm install -g ember-cli pnpm 
+RUN npm install -g ember-cli pnpm@10.20.0
 
 # Install git
 RUN apk update && apk add git openssh-client
 
 # Trust GitHub's RSA host key
 RUN mkdir -p -m 0600 ~/.ssh && ssh-keyscan github.com >> ~/.ssh/known_hosts
-
-# Allow build scripts for known safe packages (pnpm v10 requires explicit approval)
-RUN printf 'onlyBuiltDependencies:\n  - "@fortawesome/fontawesome-common-types"\n  - "@fortawesome/fontawesome-svg-core"\n  - "@fortawesome/free-brands-svg-icons"\n  - "@fortawesome/free-solid-svg-icons"\n  - "core-js"\n' > pnpm.yaml
 
 # Install app dependencies
 RUN pnpm install
